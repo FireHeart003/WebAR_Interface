@@ -3,27 +3,35 @@ body {
     font-family: Arial, sans-serif;
     background-color: #2f6e72;
     color: white;
+    overflow-x: hidden;
+
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff3b;
+    padding: 20px 20px;
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    text-align: auto;
+}
+
+nav {
+    flex: 1; /* Makes the nav take up remaining space */
+    display: flex;
+    justify-content: center; /* Centers the nav items */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li a {
@@ -77,12 +85,65 @@ button {
     font-size: 1em;
 }
 
-.download-btn {
+.ar-btn {
     background-color: white;
     color: #5865F2;
 }
 
-.browser-btn {
-    background-color: white;
-    color: #5865F2;
+.environment{
+    background-color: #2f6e72;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 20%;
+    min-width: 200px;
+    text-align: center;
+    overflow: hidden;
+    color: #666;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #2f6e72;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.card .arrow {
+    font-size: 2em;
+    align-content: center;
+    color: #2f6e72;
 }
