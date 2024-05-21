@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2f6e72;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff3b;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(images/home.png);
+    background-size: cover;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    overflow: hidden;
+}
+
+.hero h1 {
+    margin-top: 20px;
+    padding-top: 100px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.download-btn {
+    background-color: white;
+    color: #5865F2;
+}
+
+.browser-btn {
+    background-color: white;
+    color: #5865F2;
+}
