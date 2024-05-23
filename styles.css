@@ -1,17 +1,13 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2f6e72;
-    color: white;
     overflow-x: hidden;
-
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 20px;
+    background-color: #2f6e72;
+    color: white ! important;
 }
 
 .logo {
@@ -20,72 +16,51 @@ header {
 }
 
 nav {
-    flex: 1; /* Makes the nav take up remaining space */
     display: flex;
     justify-content: center; /* Centers the nav items */
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     gap: 30px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: white ! important;
 }
 
-.login a {
-    text-decoration: none;
+.login button {
     color: white;
-    padding: 5px 10px;
     border: 2px solid white;
-    border-radius: 5px;
 }
 
-.hero {
+.jumbotron {
+    align-items: center;
     text-align: center;
     padding: 50px 20px;
-    background-image: url(images/home.png);
+    background-image: url(images/home.png)   !important;
     background-size: cover;
     height: 100vh; /* Full height of the viewport */
     width: 100%; /* Full width of the viewport */
     overflow: hidden;
+    color: white;
 }
 
-.hero h1 {
+.jumbotron h1 {
     margin-top: 20px;
     padding-top: 100px;
     font-size: 3em;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.hero p {
+.jumbotron p {
     font-size: 1.2em;
     margin-bottom: 30px;
-    text-align: center;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
 
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.ar-btn {
+.buttons a button{
     background-color: white;
     color: #5865F2;
 }
@@ -99,6 +74,7 @@ button {
 .environment h1{
     font-size: 2em;
     padding-top: 10px;
+    color: white !important;
 }
 
 .container {
@@ -107,6 +83,7 @@ button {
     flex-wrap: wrap;
     padding: 20px;
 }
+
 
 
 .card {
@@ -155,22 +132,19 @@ button {
     font-size: 2em;
     align-content: center;
     color: #2f6e72;
+    align-self: flex-end; /* This aligns the arrow to the bottom right corner */
+
 }
 
 .about{
     padding: 20px;
     background-color: #FFF2EB;
-    max-width: 1200px;
-    margin:20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #d35400;
     overflow: hidden;
 }
 
-.about-section{
+.container-fluid{
     display: flex;
-    justify-content:center;
     align-items: center;
     padding: 20px;
 }
@@ -185,21 +159,22 @@ button {
     border-radius: 5px;
 }
 
-.about-section img{
-    width: 700px;
+.container-fluid img{
+    width: 100vh;
     height: auto;
     margin: 20px;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 
-.about-section p{
+.container-fluid p{
     color: #2f6e72;
 }
 
-.about-section h1{
+.container-fluid h1{
     font-size: 3em;
     padding-top: 100px;
     margin-bottom: 20px;
     font-weight: lighter;
 }
+
