@@ -178,3 +178,10 @@ nav ul li a {
     font-weight: lighter;
 }
 
+.list-group h1 {
+    color: black;
+}
+
+.contactBack {
+    background-color: #2f6e72;
+}
