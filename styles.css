@@ -77,43 +77,28 @@ nav ul li a {
     color: white !important;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.flex-row img{
+    width: 100%;
+    height: auto;
+    margin: 20px;
     padding: 20px;
 }
 
 
 
-.card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    width: 20%;
-    min-width: 200px;
-    text-align: center;
-    overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: #2f6e72;
-}
+
 
 .card a {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 15px;
     
 }
