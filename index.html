@@ -13,13 +13,18 @@
 
 <body>
     <header>
-        <div class="logo">Coral Gables</div>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link active" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar container-header col col-12" id="navigationBar">
+                    <a class="navbar-brand" id="navTitle" href="index.html">City of Coral Gables </a>
+                    <nav class="nav-links" id="links">
+                        <ul class="nav-item">
+                            <li class="nav-item"><a class="nav-link active" href="#about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
     </header>
     <main>
         <section class="jumbotron jumbotron-fluid ">
@@ -33,13 +38,13 @@
             </div>
         </section>
 
-        <section class="environment py-5" id="bottom-section">
+        <section class="environment py-5 container-fluid" id="ar-section">
             <h1>Augmented Reality Web Environments</h1>
-            <div class="flex-row py-5 d-flex ">
-                <div class=" col-lg-6 mb-4 d-flex align-items-center">
+            <div class="flex-row py-5 d-flex img-container">
+                <div class=" col-lg-6 mb-4 d-flex align-items-center img-container">
                     <img src="images/biltmore.png" alt="Biltmore Hotel">
                 </div>
-                <div class="col-lg-6 px-5">
+                <div class="px-5 card-columns">
                     <div class="row">
                         <div class="col-md-6 mb-4">
                             <div class="card">
@@ -93,12 +98,13 @@
             </div>
         </section>
 
-        <section class="about" id="about">
-            <div class="container-fluid">
-                <div>
-                    <img class="img-fluid" src="images/city.png" alt="City of Coral Gables">
+        <section class="about container-fluid" id="about">
+                <div class = "row">
+                    <div class = "col">
+                        <img class="img-fluid" src="images/city.png" alt="City of Coral Gables">
+                    </div>
                 </div>
-                <div class="about-text">
+                <div class="col about-text">
                     <h1>About Coral Gables</h1>
                     <p>
                         Welcome to the “City Beautiful” with lush green avenues winding through residential houses,
@@ -108,7 +114,6 @@
                         <button class="learn-butt">Learn More</button>
                     </a>
                 </div>
-            </div>
         </section>
 
         <div class="text-secondary text-center contactBack" id="contact">

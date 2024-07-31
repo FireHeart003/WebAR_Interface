@@ -1,33 +1,38 @@
 body {
     overflow-x: hidden;
 }
-
-header {
+.nav-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 20px;
-    background-color: #2f6e72;
-    color: white ! important;
+    margin-top: 5px;
+    margin-right: 20px;
+
 }
 
-.logo {
-    font-size: 1.5em;
+#navTitle {
+    margin-left: 20px;
+    font-size: 30px;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-    justify-content: center; /* Centers the nav items */
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+
+}
+#navigationBar{
+    background-color: #2f6e72;
 }
 
-nav ul {
-    display: flex;
-    gap: 30px;
-}
 
-nav ul li a {
+.nav-links a {
+    color: #ffffff;
+    margin-left: 20px;
     text-decoration: none;
-    color: white ! important;
+    font-size: 18px;
 }
 
 
@@ -61,11 +66,16 @@ nav ul li a {
     color: #5865F2;
 }
 
-.environment{
+/*AR SECTIONS*/
+#ar-section{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: #2f6e72;
     text-align: center;
 }
-
 
 .environment h1{
     font-size: 2em;
@@ -78,8 +88,9 @@ nav ul li a {
     height: auto;
     margin: 20px;
     padding: 20px;
+    min-width: 300px;
+    flex: 1 1 50%;
 }
-
 
 
 .col-md-6.mb-4 div{
@@ -117,18 +128,35 @@ nav ul li a {
 
 }
 
+/*About Us*/
+.about img{
+    width: 100vh;
+    height: auto;
+    margin: 20px;
+    padding-right: 50px;
+}
+
 .about{
     padding: 20px;
     background-color: #FFF2EB;
     color: #d35400;
     overflow: hidden;
-}
-
-.container-fluid{
     display: flex;
     padding: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.about p{
+    color: #2f6e72;
+}
+
+.about h1{
+    font-size: 3em;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    font-weight: lighter;
 }
 
 .learn-butt {
@@ -141,29 +169,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.container-fluid img{
-    width: 100vh;
-    height: auto;
-    margin: 20px;
-    padding-right: 50px;
-}
-
-
-.container-fluid p{
-    color: #2f6e72;
-}
-
-.container-fluid h1{
-    font-size: 3em;
-    padding-top: 100px;
-    margin-bottom: 20px;
-    font-weight: lighter;
-}
-
-.list-group h1 {
-    color: black;
-}
-
+/*Contact Section*/
 .contactBack {
     background-color: #ecf0f0;
 }
