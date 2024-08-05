@@ -1,6 +1,38 @@
 body {
     overflow-x: hidden;
 }
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007073;
+    color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 70px;
+    max-height: 70px; 
+    width: auto; 
+    height: auto; 
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: #FFFFFF;  
+}
+.card:hover{
+    box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.5);
+    transition: height 0.3s, box-shadow 0.3s;
+}
+#navigationBar{
+    background-color: #007073;
+}
+
 .nav-item {
     list-style-type: none;
     margin: 0;
@@ -11,48 +43,47 @@ body {
 
 }
 
-#navTitle {
-    margin-left: 20px;
-    font-size: 30px;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-    color: #FFFFFF;
-
-}
-#navigationBar{
-    background-color: #2f6e72;
-}
-
-
 .nav-links a {
     color: #ffffff;
     margin-left: 20px;
     text-decoration: none;
     font-size: 18px;
+    padding: 0px;
+    margin: 0px;
 }
 
-
+@media screen and (max-width: 450px) {
+    #navTitle {
+        font-size: 20px; 
+    }
+    
+    .nav-links {
+        margin-top: 10px; 
+    }
+}
+/*Home*/
 .jumbotron {
     align-items: center;
     text-align: center;
-    padding: 50px 20px;
-    background-image: url(images/home.png)   !important;
     background-size: cover;
     height: 100vh; /* Full height of the viewport */
     width: 100%; /* Full width of the viewport */
     overflow: hidden;
-    color: white;
+    color: rgb(247, 247, 247);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/biltmore.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
+.top-section{
+    background-color: #007073 !important;
+    margin-bottom: 0px !important;
+}
 .jumbotron h1 {
     margin-top: 20px;
     padding-top: 100px;
     font-size: 3em;
-    margin-bottom: 20px;
 }
 
 .jumbotron p {
@@ -67,65 +98,74 @@ body {
 }
 
 /*AR SECTIONS*/
-#ar-section{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #2f6e72;
+.ar-env{
+    background-color: #007073;
+    color: white;
     text-align: center;
+    padding-bottom: 40px;
 }
 
-.environment h1{
-    font-size: 2em;
-    padding-top: 10px;
-    color: white !important;
-}
-
-.flex-row img{
-    width: 100%;
-    height: auto;
-    margin: 20px;
-    padding: 20px;
-    min-width: 300px;
-    flex: 1 1 50%;
-}
-
-
-.col-md-6.mb-4 div{
-    padding: 20px;
-}
-
-.card a {
+.ar-env a:hover{
     text-decoration: none;
-    color: inherit;
-    display: block;
+}
+.ar-env h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.card img {
-    width: 70%;
-    height: 50%;
-    margin-bottom: 15px;
-    
+.ar-env .card-footer{
+    margin-top: auto;
 }
 
-.card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.ar-env h4{
+    color: #d35400;
 }
 
-.card p {
-    font-size: 1em;
-    margin-bottom: 15px;
+.ar-env .card-img-top{
+    padding: 10px;
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    max-height: 150px;
 }
 
 .card .arrow {
     font-size: 2em;
     align-content: center;
-    color: #2f6e72;
+    color: #007073;
     align-self: flex-end; /* This aligns the arrow to the bottom right corner */
+}
 
+.title-2{
+    display:none;
+}
+.title-1{
+    display:inline;
+}
+.title-3{
+    display: none;
+}
+
+@media (max-width: 1150px){
+    .title-2{
+        display: inline;
+    }
+    .title-1{
+        display: none;
+    }
+} 
+
+.card-title {
+    white-space: nowrap;
+}
+
+@media (max-width: 798px){
+    .title-2{
+        display: none;
+    }
+    .title-3{
+        display: inline;
+    }
 }
 
 /*About Us*/
@@ -149,7 +189,7 @@ body {
 }
 
 .about p{
-    color: #2f6e72;
+    color: #007073;
 }
 
 .about h1{
@@ -160,7 +200,7 @@ body {
 }
 
 .learn-butt {
-    background-color: #2f6e72;
+    background-color: #007073;
     color: white;
     border: none;
     padding: 10px 20px;
