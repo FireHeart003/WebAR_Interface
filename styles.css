@@ -23,12 +23,10 @@ body {
 
 .nav-links a:hover {
     text-decoration: none;
-    color: #FFFFFF;  
+    transform: translate(0, -2px);
+    color: #FFFFFF; 
 }
-.card:hover{
-    box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.5);
-    transition: height 0.3s, box-shadow 0.3s;
-}
+
 #navigationBar{
     background-color: #007073;
 }
@@ -50,7 +48,10 @@ body {
     font-size: 18px;
     padding: 0px;
     margin: 0px;
+    transition: transform .3s ease-out;
+    display: inline-block;
 }
+
 
 @media screen and (max-width: 450px) {
     #navTitle {
@@ -136,6 +137,11 @@ body {
     align-self: flex-end; /* This aligns the arrow to the bottom right corner */
 }
 
+.card:hover{
+    box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.7);
+    transition: height 0.5s, box-shadow 0.5s;
+}
+
 .title-2{
     display:none;
 }
@@ -174,6 +180,13 @@ body {
     height: auto;
     margin: 20px;
     padding-right: 50px;
+}
+.about button:hover{
+    transform: translate(0, -2px);
+}
+
+.about button{
+    transition: transform .3s ease-out;
 }
 
 .about{
