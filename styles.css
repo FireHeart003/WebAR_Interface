@@ -11,7 +11,23 @@ body {
     width: 100%;
     max-width: 100%;
     padding: 20px;
+    background: linear-gradient(270deg, #ff7e5f, #007073);
+    background-size: 400% 400%;
+    animation: gradient-animation 5s ease infinite;
 }
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .logo {
     max-width: 70px;
@@ -29,6 +45,8 @@ body {
 
 #navigationBar{
     background-color: #007073;
+    text-align: center;
+
 }
 
 .nav-item {
@@ -38,7 +56,6 @@ body {
     display: flex;
     margin-top: 5px;
     margin-right: 20px;
-
 }
 
 .nav-links a {
@@ -46,7 +63,7 @@ body {
     margin-left: 20px;
     text-decoration: none;
     font-size: 18px;
-    padding: 0px;
+    padding-bottom: 15px;
     margin: 0px;
     transition: transform .3s ease-out;
     display: inline-block;
