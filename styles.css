@@ -30,8 +30,8 @@ body {
 
 
 .logo {
-    max-width: 70px;
-    max-height: 70px; 
+    max-width: 80px;
+    max-height: 80px; 
     width: auto; 
     height: auto; 
     margin-left: 20px;
@@ -99,25 +99,58 @@ body {
     margin-bottom: 0px !important;
 }
 .jumbotron h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.heading-back
+{
+    display: inline-block;
+    background: linear-gradient(270deg, rgba(255, 126, 95, 0.5), rgba(0, 112, 115, 0.5));
+    background-size: 400% 400%;
+    animation: gradient-animation 5s ease infinite;
+    border-radius: 10px;
+}
+.heading{
     margin-top: 20px;
     padding-top: 100px;
-    font-size: 3em;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .jumbotron p {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow:
+    0.05em 0 #00000042,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
 }
+
 
 
 .buttons a button{
     background-color: white;
-    color: #5865F2;
+    color: #007073;
+    border: 1px solid #007073;
+}
+
+#ar-btn:hover{
+    background-color: #007073;
+    color: #ffffff;
+    border: 1px solid #007073;
 }
 
 /*AR SECTIONS*/
 .ar-env{
     background-color: #007073;
+    padding-top: 20px;
     color: white;
     text-align: center;
     padding-bottom: 40px;
